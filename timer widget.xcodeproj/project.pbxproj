@@ -12,6 +12,8 @@
 		BC839C842C0F914B00AFADA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C832C0F914B00AFADA4 /* Assets.xcassets */; };
 		BC839C872C0F914B00AFADA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */; };
 		BC839C902C0F9C7E00AFADA4 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C8F2C0F9C7E00AFADA4 /* Widget.swift */; };
+		BC9AA21A2C10AE4E0041A0E6 /* ButtonConfiguations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */; };
+		BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* ListItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		BC839C832C0F914B00AFADA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC839C8F2C0F9C7E00AFADA4 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfiguations.swift; sourceTree = "<group>"; };
+		BC9AA21B2C10BB360041A0E6 /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */,
 				BC839C812C0F914A00AFADA4 /* ContentView.swift */,
 				BC839C8F2C0F9C7E00AFADA4 /* Widget.swift */,
+				BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */,
+				BC9AA21B2C10BB360041A0E6 /* ListItems.swift */,
 				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
 				BC839C852C0F914B00AFADA4 /* Preview Content */,
 			);
@@ -142,7 +148,9 @@
 			files = (
 				BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */,
 				BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */,
+				BC9AA21A2C10AE4E0041A0E6 /* ButtonConfiguations.swift in Sources */,
 				BC839C902C0F9C7E00AFADA4 /* Widget.swift in Sources */,
+				BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
