@@ -15,9 +15,8 @@ struct AddButton: ButtonStyle {
             .background(Color(red: 0.118, green: 0.141, blue: 0.376))
             .foregroundStyle(.white)
             .clipShape(Capsule())
+            .dynamicTypeSize(.xxxLarge)
+            .fontWeight(.bold)
+            .padding()
     }
-}
-
-func AddNewCountdown() {
-print("kys")
 }

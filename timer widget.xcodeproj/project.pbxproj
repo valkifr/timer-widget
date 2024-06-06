@@ -59,10 +59,10 @@
 			children = (
 				BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */,
 				BC839C812C0F914A00AFADA4 /* ContentView.swift */,
-				BC839C8F2C0F9C7E00AFADA4 /* Widget.swift */,
 				BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */,
 				BC9AA21B2C10BB360041A0E6 /* ListItems.swift */,
 				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
+				BC92376E2C11FD7E0045CC7A /* widgets */,
 				BC839C852C0F914B00AFADA4 /* Preview Content */,
 			);
 			path = "timer widget";
@@ -74,6 +74,14 @@
 				BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC92376E2C11FD7E0045CC7A /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				BC839C8F2C0F9C7E00AFADA4 /* Widget.swift */,
+			);
+			path = widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

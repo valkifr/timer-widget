@@ -8,46 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    struct ADate: Identifiable, Hashable {
-        let year    :       Int
-        let month   :       Int
-        let day     :       Int
-        let hour    :       Int
-        let minute  :       Int
-        let dateInString:   String
-        let id = UUID()
-    }
-
-
-    private var dates = [
-        ADate(year: 2025, month: 3, day: 2, hour: 3, minute: 2, 
-              dateInString: "2025-03-02-03-02"),
-        ADate(year: 2026, month: 2, day: 3, hour: 3, minute: 2,
-              dateInString: "2026-02-03-03-02")
-    ]
+    
+    @State var isShowing = false
 
 
     var body: some View {
         ZStack {
             NavigationStack {
-                
-                
-                
                 List(dates) {
+                    
                     Text($0.dateInString)
+                        .padding()
+                    
                 }
-                .navigationTitle("Countdowns")
-            }
+                        .navigationTitle("Countdowns")
+                }
             VStack {
-             
+               
                 Spacer()
-                Button("Add new countdown",
-                       systemImage: "plus.circle",
-                       action: AddNewCountdown)
+                
+                Button("Add new countdown", systemImage: "plus.circle", action: {
+                    isShowing.toggle()
+                })
                 .buttonStyle(AddButton())
-                .dynamicTypeSize(.xxxLarge)
-                .fontWeight(.bold)
-                .padding()
+                .sheet(isPresented: $isShowing, content: {
+                    Form(content: {
+                        /*@START_MENU_TOKEN@*/Text("Content")/*@END_MENU_TOKEN@*/
+                        DatePicker(<#T##title: StringProtocol##StringProtocol#>, selection: <#T##Binding<Date>#>, displayedComponents: <#T##DatePicker<Text>.Components#>)
+                    })
+                })
             }
         }
     }
