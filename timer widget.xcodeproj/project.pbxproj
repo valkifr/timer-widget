@@ -14,6 +14,7 @@
 		BC839C902C0F9C7E00AFADA4 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C8F2C0F9C7E00AFADA4 /* Widget.swift */; };
 		BC9AA21A2C10AE4E0041A0E6 /* ButtonConfiguations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */; };
 		BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* ListItems.swift */; };
+		BCEB51372C16FAF9007D2931 /* CountdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB51362C16FAF9007D2931 /* CountdownType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BC839C8F2C0F9C7E00AFADA4 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
 		BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfiguations.swift; sourceTree = "<group>"; };
 		BC9AA21B2C10BB360041A0E6 /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
+		BCEB51362C16FAF9007D2931 /* CountdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */,
 				BC839C812C0F914A00AFADA4 /* ContentView.swift */,
+				BCEB51362C16FAF9007D2931 /* CountdownType.swift */,
 				BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */,
 				BC9AA21B2C10BB360041A0E6 /* ListItems.swift */,
 				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				BC9AA21A2C10AE4E0041A0E6 /* ButtonConfiguations.swift in Sources */,
 				BC839C902C0F9C7E00AFADA4 /* Widget.swift in Sources */,
 				BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */,
+				BCEB51372C16FAF9007D2931 /* CountdownType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
