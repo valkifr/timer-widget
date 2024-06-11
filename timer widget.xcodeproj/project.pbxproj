@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC5461FE2C18C0B8006AA844 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5461FD2C18C0B8006AA844 /* ColorExtension.swift */; };
 		BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */; };
 		BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C812C0F914A00AFADA4 /* ContentView.swift */; };
 		BC839C842C0F914B00AFADA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C832C0F914B00AFADA4 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC5461FD2C18C0B8006AA844 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		BC839C7C2C0F914A00AFADA4 /* timer widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "timer widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer_widgetApp.swift; sourceTree = "<group>"; };
 		BC839C812C0F914A00AFADA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */,
 				BC839C812C0F914A00AFADA4 /* ContentView.swift */,
 				BCEB51362C16FAF9007D2931 /* CountdownType.swift */,
+				BC5461FD2C18C0B8006AA844 /* ColorExtension.swift */,
 				BC9AA2192C10AE4E0041A0E6 /* ButtonConfiguations.swift */,
 				BC9AA21B2C10BB360041A0E6 /* ListItems.swift */,
 				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 				BC9AA21A2C10AE4E0041A0E6 /* ButtonConfiguations.swift in Sources */,
 				BC839C902C0F9C7E00AFADA4 /* Widget.swift in Sources */,
 				BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */,
+				BC5461FE2C18C0B8006AA844 /* ColorExtension.swift in Sources */,
 				BCEB51372C16FAF9007D2931 /* CountdownType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

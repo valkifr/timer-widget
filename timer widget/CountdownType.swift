@@ -15,7 +15,13 @@ struct Countdown: Codable, Hashable, Identifiable {
 }
 
 @Model
-final class CountdownItem {
+final class CountdownItem: Codable {
+    
+    enum CodingKeys: CodingKey {
+    case title, emoji, endDate, color
+        
+    }
+    
     var title: String
     var emoji: Character
     var endDate: Date
@@ -26,5 +32,16 @@ final class CountdownItem {
         self.emoji = emoji
         self.endDate = endDate
         self.color = color
+    }
+    
+    
+    required init(from decoder: Decoder) {
+        let container = try? decoder.container(keyedBy: CodingKeys.self)
+        title   = try container.decode(String.self, forKey: .title)
+        emoji = try container.decode(Character.self, forKey: .emoji)
+        endDate = try container.decode(Date.self, forKey: .endDate)
+        color = try container.decode(Color.self, forKey: .color)
+        
+        
     }
 }
