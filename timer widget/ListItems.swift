@@ -15,13 +15,19 @@ struct ADate: Identifiable, Hashable {
     let minute  :       Int
     let dateInString:   String
     let id = UUID()
+    
+    init(year: Int, month: Int, day: Int, hour: Int, minute: Int) {
+        self.year = year
+        self.month = month
+        self.day = day
+        self.hour = hour
+        self.minute = minute
+        self.dateInString = "\(year)-\(month)-\(day)-\(hour)-\(minute)"
+    }
 }
 
 var dates = [
-   ADate(year: 2025, month: 3, day: 2, hour: 3, minute: 2, dateInString: "2025-03-02-03-02"),
-   ADate(year: 2026, month: 2, day: 3, hour: 3, minute: 2, dateInString: "2026-02-03-03-02")
+  ADate(year: 2010, month: 04, day: 24, hour: 02, minute: 04)
 ]
 
-var title = ""
-var icon = ""
- 
+let randomDate = ADate(year: 2222, month: 01, day: 02, hour: 08, minute: 09)

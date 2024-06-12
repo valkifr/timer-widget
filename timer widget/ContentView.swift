@@ -11,14 +11,14 @@ import SwiftData
 struct ContentView: View {
     
     @State var isShowing = false
-    @State var colour = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
+    @State var colour = CGColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
 
     var body: some View {
         ZStack {
             NavigationStack {
                     List(dates) {
                     Text($0.dateInString)
-                        .padding()
+                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                     }
                     .navigationTitle("Countdowns")
                 }
@@ -36,6 +36,7 @@ struct ContentView: View {
                                 print(colour)
 
                         }
+                        Color(colour)
                     })
                 })
             }
