@@ -11,7 +11,7 @@ import SwiftData
 struct ContentView: View {
     
     @State var isShowing = false
-    @State var colour = CGColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
+    
 
     var body: some View {
         ZStack {
@@ -29,15 +29,9 @@ struct ContentView: View {
                 })
                 .buttonStyle(AddButton())
                 .sheet(isPresented: $isShowing, content: {
-                    Form(content: {
-                        Text("Content")
-                        ColorPicker("pick a color", selection: $colour)
-                        Button("confirm color") {
-                                print(colour)
-
-                        }
-                        Color(colour)
+                    SheetContentView()
                     })
+                    
                 })
             }
         }
