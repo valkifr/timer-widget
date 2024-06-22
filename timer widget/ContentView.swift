@@ -16,9 +16,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             NavigationStack {
-                    List(dates) {
-                    Text($0.dateInString)
-                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                    List() {
+                    Text("date placeholder")
+                            .padding(EdgeInsets(top: 7, leading: 0, bottom: 8.7, trailing: 10))
                     }
                     .navigationTitle("Countdowns")
                 }
@@ -32,11 +32,11 @@ struct ContentView: View {
                     SheetContentView()
                     })
                     
-                })
+                }
             }
         }
     }
-}
+
 
 #Preview {
     ContentView()
