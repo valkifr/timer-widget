@@ -25,20 +25,29 @@ struct AddButton: ButtonStyle {
 struct SheetContentView: View {
     
     @State var colour = CGColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
-    
+    @State var date = Date()
     
     var body: some View {
-        
-    Form(content: {
-        Text("Content")
-        ColorPicker("pick a color", selection: $colour)
-        Button("confirm color") {
-            print("the selected color is: \(String(describing: colour.components))")
-
+        ToolbarItem(placement: .topBarTrailing) {
+            Button() {
+                print("\(colour)")
+            } label: {
+                Text("save")
+            }
         }
-        RoundedRectangle(cornerSize: CGSize(width: 5, height: 5))
-            .padding(.vertical)
-            .frame(width: 100, height: 100, alignment: .trailing)
+    Form(content: {
+        
+        Section("pick a color") {
+            ColorPicker("pick a color", selection: $colour)
+            RoundedRectangle(cornerSize: CGSize(width: 5, height: 5))
+                .padding(.vertical)
+                .frame(width: 100, height: 100, alignment: .trailing)
+        }
+        Section("pick a date") {
+            DatePicker("When should it end?", selection: $date)
+                .datePickerStyle(.graphical)
+        }
+        
         })
     }
 }

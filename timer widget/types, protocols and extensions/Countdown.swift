@@ -17,10 +17,10 @@ struct Countdown: Codable, Hashable, Identifiable {
 
 
 
-@Model
+
 class CountdownItem {
     
-    @Attribute(.unique) var title: String
+    var title: String
     var emoji: String
     var endDate: Date
     var color: String

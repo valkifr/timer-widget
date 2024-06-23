@@ -16,7 +16,7 @@
 		BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* ListItems.swift */; };
 		BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA19CA32C2806200071E1D3 /* CoreData.framework */; };
 		BCA19CE32C280A540071E1D3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCA19CE12C280A540071E1D3 /* Model.xcdatamodeld */; };
-		BCEB51372C16FAF9007D2931 /* CountdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB51362C16FAF9007D2931 /* CountdownType.swift */; };
+		BCEB51372C16FAF9007D2931 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB51362C16FAF9007D2931 /* Countdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,7 +45,7 @@
 		BC9AA21B2C10BB360041A0E6 /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
 		BCA19CA32C2806200071E1D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BCA19CE22C280A540071E1D3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		BCEB51362C16FAF9007D2931 /* CountdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownType.swift; sourceTree = "<group>"; };
+		BCEB51362C16FAF9007D2931 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		BC4B27E42C260A0C00D2BDD9 /* types, protocols and extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BCEB51362C16FAF9007D2931 /* CountdownType.swift */,
+				BCEB51362C16FAF9007D2931 /* Countdown.swift */,
 				BC9AA21B2C10BB360041A0E6 /* ListItems.swift */,
 				BC4B27E22C26036E00D2BDD9 /* Colors.swift */,
 			);
@@ -204,7 +204,7 @@
 				BCA19CE32C280A540071E1D3 /* Model.xcdatamodeld in Sources */,
 				BC4B27E32C26036E00D2BDD9 /* Colors.swift in Sources */,
 				BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */,
-				BCEB51372C16FAF9007D2931 /* CountdownType.swift in Sources */,
+				BCEB51372C16FAF9007D2931 /* Countdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
