@@ -6,22 +6,23 @@
 //
 
 import SwiftUI
-import SwiftData
+//import SwiftData
+import CoreData
 
 @main
 struct timer_widgetApp: App {
     
 //    var container: ModelContainer = {
 //        let schema = Schema([CountdownItem.self])
-//        let configuratioin = ModelConfiguration("config", groupContainer: <#T##ModelConfiguration.GroupContainer#>, cloudKitDatabase: <#T##ModelConfiguration.CloudKitDatabase#>)
-//        let container = ModelContainer(for: schema, configurations: <#T##[ModelConfiguration]#>)
+//        let configuratioin = ModelConfiguration("config", groupContainer: , cloudKitDatabase: )
+//        let container = ModelContainer(for: schema, configurations: )
 //        
 //    }
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: [CountdownItem.self])
+//        .modelContainer(for: [CountdownItem.self])
     }
 }
 

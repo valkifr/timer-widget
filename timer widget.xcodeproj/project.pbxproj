@@ -14,6 +14,8 @@
 		BC839C872C0F914B00AFADA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */; };
 		BC9AA21A2C10AE4E0041A0E6 /* ButtonConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* ButtonConfigurations.swift */; };
 		BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* ListItems.swift */; };
+		BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA19CA32C2806200071E1D3 /* CoreData.framework */; };
+		BCA19CE32C280A540071E1D3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCA19CE12C280A540071E1D3 /* Model.xcdatamodeld */; };
 		BCEB51372C16FAF9007D2931 /* CountdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB51362C16FAF9007D2931 /* CountdownType.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		BC989A2C2C1ADF2F00EAEF49 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		BC9AA2192C10AE4E0041A0E6 /* ButtonConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfigurations.swift; sourceTree = "<group>"; };
 		BC9AA21B2C10BB360041A0E6 /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
+		BCA19CA32C2806200071E1D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BCA19CE22C280A540071E1D3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BCEB51362C16FAF9007D2931 /* CountdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */,
+				BCA19CE12C280A540071E1D3 /* Model.xcdatamodeld */,
 				BC839C812C0F914A00AFADA4 /* ContentView.swift */,
 				BC4B27E12C25F8B200D2BDD9 /* views */,
 				BC4B27E42C260A0C00D2BDD9 /* types, protocols and extensions */,
@@ -114,6 +120,7 @@
 		BC989A292C1ADF2F00EAEF49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCA19CA32C2806200071E1D3 /* CoreData.framework */,
 				BC989A2A2C1ADF2F00EAEF49 /* WidgetKit.framework */,
 				BC989A2C2C1ADF2F00EAEF49 /* SwiftUI.framework */,
 			);
@@ -194,6 +201,7 @@
 				BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */,
 				BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */,
 				BC9AA21A2C10AE4E0041A0E6 /* ButtonConfigurations.swift in Sources */,
+				BCA19CE32C280A540071E1D3 /* Model.xcdatamodeld in Sources */,
 				BC4B27E32C26036E00D2BDD9 /* Colors.swift in Sources */,
 				BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */,
 				BCEB51372C16FAF9007D2931 /* CountdownType.swift in Sources */,
@@ -329,11 +337,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timer widget/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -346,6 +356,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mefr.timer-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,11 +370,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timer widget/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -376,6 +389,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mefr.timer-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,6 +418,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCA19CE12C280A540071E1D3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCA19CE22C280A540071E1D3 /* Model.xcdatamodel */,
+			);
+			currentVersion = BCA19CE22C280A540071E1D3 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = "/Users/valki/Developer/timer widget/timer widget/Model.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BC839C742C0F914A00AFADA4 /* Project object */;
 }
