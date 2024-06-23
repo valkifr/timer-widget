@@ -28,7 +28,7 @@ struct SheetContentView: View {
     @State var date = Date()
     
     var body: some View {
-        ToolbarItem(placement: .topBarTrailing) {
+        ToolbarItem(placement: .confirmationAction) {
             Button() {
                 print("\(colour)")
             } label: {

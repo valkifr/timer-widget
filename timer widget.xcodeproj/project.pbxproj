@@ -82,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				BC839C7E2C0F914A00AFADA4 /* timer widget */,
+				BCA19CE12C280A540071E1D3 /* Model.xcdatamodeld */,
+				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
 				BC989A292C1ADF2F00EAEF49 /* Frameworks */,
 				BC839C7D2C0F914A00AFADA4 /* Products */,
 			);
@@ -99,11 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */,
-				BCA19CE12C280A540071E1D3 /* Model.xcdatamodeld */,
 				BC839C812C0F914A00AFADA4 /* ContentView.swift */,
 				BC4B27E12C25F8B200D2BDD9 /* views */,
 				BC4B27E42C260A0C00D2BDD9 /* types, protocols and extensions */,
-				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
 				BC839C852C0F914B00AFADA4 /* Preview Content */,
 			);
 			path = "timer widget";
@@ -426,8 +426,7 @@
 				BCA19CE22C280A540071E1D3 /* Model.xcdatamodel */,
 			);
 			currentVersion = BCA19CE22C280A540071E1D3 /* Model.xcdatamodel */;
-			name = Model.xcdatamodeld;
-			path = "/Users/valki/Developer/timer widget/timer widget/Model.xcdatamodeld";
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
