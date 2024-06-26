@@ -40,10 +40,11 @@ struct AddColorButton: View {
 struct DefaultColorButton: View {
     
     var defaultColor: Color
+    var targetColor: Color
     
     var body: some View {
         Button(action: {
-        
+        colour = defaultColor
         }, label: {
             RoundedRectangle(cornerSize: CGSize(width: 5, height: 5))
                 .padding(.vertical)
