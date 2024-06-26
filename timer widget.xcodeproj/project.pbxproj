@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC4B27E32C26036E00D2BDD9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B27E22C26036E00D2BDD9 /* Colors.swift */; };
+		BC5AADA42C2C5A090047A2CA /* SheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5AADA32C2C5A090047A2CA /* SheetContentView.swift */; };
 		BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */; };
 		BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C812C0F914A00AFADA4 /* ContentView.swift */; };
 		BC839C842C0F914B00AFADA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C832C0F914B00AFADA4 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		BC4B27E22C26036E00D2BDD9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BC5AADA32C2C5A090047A2CA /* SheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetContentView.swift; sourceTree = "<group>"; };
 		BC839C7C2C0F914A00AFADA4 /* timer widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "timer widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer_widgetApp.swift; sourceTree = "<group>"; };
 		BC839C812C0F914A00AFADA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				BC9AA2192C10AE4E0041A0E6 /* ButtonConfigurations.swift */,
+				BC5AADA32C2C5A090047A2CA /* SheetContentView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5AADA42C2C5A090047A2CA /* SheetContentView.swift in Sources */,
 				BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */,
 				BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */,
 				BC9AA21A2C10AE4E0041A0E6 /* ButtonConfigurations.swift in Sources */,
