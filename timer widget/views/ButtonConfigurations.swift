@@ -40,11 +40,11 @@ struct AddColorButton: View {
 struct DefaultColorButton: View {
     
     var defaultColor: Color
-    var targetColor: Color
+//    var targetColor: Color
     
     var body: some View {
         Button(action: {
-        colour = defaultColor
+        
         }, label: {
             RoundedRectangle(cornerSize: CGSize(width: 5, height: 5))
                 .padding(.vertical)
@@ -55,7 +55,7 @@ struct DefaultColorButton: View {
 }
 
 
-#Preview {
+#Preview {    
     VStack {
         AddColorButton()
         DefaultColorButton(defaultColor: Color(red: 0.949, green: 0.769, blue: 0.239, opacity: 1.000))

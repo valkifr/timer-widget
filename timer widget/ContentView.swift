@@ -10,7 +10,7 @@ import SwiftData
 
 struct ContentView: View {
     
-    @State var isShowing = false
+    @State private var isShowing: Bool = false
     
 
     var body: some View {
@@ -31,7 +31,7 @@ struct ContentView: View {
                 })
                 .buttonStyle(AddCountdownButton())
                 .sheet(isPresented: $isShowing, content: {
-                    SheetContentView()
+                    SheetContentView(isShowing: $isShowing)
                     })
                     
                 }

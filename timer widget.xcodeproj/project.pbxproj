@@ -18,6 +18,7 @@
 		BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA19CA32C2806200071E1D3 /* CoreData.framework */; };
 		BCA19CE32C280A540071E1D3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCA19CE12C280A540071E1D3 /* Model.xcdatamodeld */; };
 		BCEB51372C16FAF9007D2931 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB51362C16FAF9007D2931 /* Countdown.swift */; };
+		BCEFCB952C37429800E3618A /* NewCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFCB942C37429700E3618A /* NewCountdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,7 @@
 		BCA19CA32C2806200071E1D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BCA19CE22C280A540071E1D3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BCEB51362C16FAF9007D2931 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		BCEFCB942C37429700E3618A /* NewCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCountdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				BC9AA2192C10AE4E0041A0E6 /* ButtonConfigurations.swift */,
 				BC5AADA32C2C5A090047A2CA /* SheetContentView.swift */,
+				BCEFCB942C37429700E3618A /* NewCountdownView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEFCB952C37429800E3618A /* NewCountdownView.swift in Sources */,
 				BC5AADA42C2C5A090047A2CA /* SheetContentView.swift in Sources */,
 				BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */,
 				BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */,
