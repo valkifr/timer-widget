@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewCountdownView {
+struct NewCountdownView: View {
     
     @State var colour = CGColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
     @State var date = Date()

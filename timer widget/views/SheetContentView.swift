@@ -12,7 +12,9 @@ struct SheetContentView: View {
     @Binding var isShowing: Bool
     
     var body: some View {
-        
+        NavigationLink {
+            NewCountdownView()
         }
     }
+}
 
