@@ -10,16 +10,16 @@ import SwiftData
 
 struct ContentView: View {
     
-    @State private var isShowing: Bool = false
+    @State private var isShowing = false
     
-
+    @Query(sort: \Countdown.title, animation: .bouncy) var countdowns: [Countdown]
+    
     var body: some View {
         ZStack {
             NavigationStack {
-               
-                    List() {
-                    Text("date placeholder")
-                            .padding(EdgeInsets(top: 7, leading: 0, bottom: 8.7, trailing: 10))
+                List(countdowns) { countdown in
+                    Text(countdown.title)
+                        .padding(EdgeInsets(top: 7, leading: 0, bottom: 8.7, trailing: 10))
                     }
                     .navigationTitle("Countdowns")
                 }
@@ -31,7 +31,7 @@ struct ContentView: View {
                 })
                 .buttonStyle(AddCountdownButton())
                 .sheet(isPresented: $isShowing, content: {
-                    SheetContentView(isShowing: $isShowing)
+                    NewCountdownView(countdown: nil)
                     })
                     
                 }
