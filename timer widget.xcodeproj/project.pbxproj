@@ -11,8 +11,8 @@
 		BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C812C0F914A00AFADA4 /* ContentView.swift */; };
 		BC839C842C0F914B00AFADA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C832C0F914B00AFADA4 /* Assets.xcassets */; };
 		BC839C872C0F914B00AFADA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */; };
-		BC9AA21A2C10AE4E0041A0E6 /* ButtonConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* ButtonConfigurations.swift */; };
-		BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* ListItems.swift */; };
+		BC9AA21A2C10AE4E0041A0E6 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* Buttons.swift */; };
+		BC9AA21C2C10BB360041A0E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* Extensions.swift */; };
 		BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA19CA32C2806200071E1D3 /* CoreData.framework */; };
 		BCCAB44B2C51325300B33A47 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC989A2A2C1ADF2F00EAEF49 /* WidgetKit.framework */; };
 		BCCAB44C2C51325300B33A47 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC989A2C2C1ADF2F00EAEF49 /* SwiftUI.framework */; };
@@ -22,9 +22,11 @@
 		BCCAB4552C51325300B33A47 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCAB4542C51325300B33A47 /* AppIntent.swift */; };
 		BCCAB4572C51325500B33A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCAB4562C51325500B33A47 /* Assets.xcassets */; };
 		BCCAB45B2C51325500B33A47 /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BCCAB44A2C51325300B33A47 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BCD41DE42C6E04580064F5E6 /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BCD41DE32C6E04580064F5E6 /* MCEmojiPicker */; };
+		BCD764F82C73475F00FB1B0D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD764F72C73475F00FB1B0D /* SettingsView.swift */; };
+		BCD764FA2C735F1500FB1B0D /* CountdownDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */; };
+		BCDC15922C772F02001BD438 /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BCDC15912C772F02001BD438 /* MCEmojiPicker */; };
 		BCEB51372C16FAF9007D2931 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB51362C16FAF9007D2931 /* Countdown.swift */; };
-		BCEFCB952C37429800E3618A /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFCB942C37429700E3618A /* Editor.swift */; };
+		BCEFCB952C37429800E3618A /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFCB942C37429700E3618A /* EditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +61,8 @@
 		BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC989A2A2C1ADF2F00EAEF49 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		BC989A2C2C1ADF2F00EAEF49 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		BC9AA2192C10AE4E0041A0E6 /* ButtonConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfigurations.swift; sourceTree = "<group>"; };
-		BC9AA21B2C10BB360041A0E6 /* ListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItems.swift; sourceTree = "<group>"; };
+		BC9AA2192C10AE4E0041A0E6 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		BC9AA21B2C10BB360041A0E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BCA19CA32C2806200071E1D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BCCAB44A2C51325300B33A47 /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCAB44E2C51325300B33A47 /* widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetBundle.swift; sourceTree = "<group>"; };
@@ -71,8 +73,10 @@
 		BCCAB4582C51325500B33A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCCAB45F2C5132CC00B33A47 /* timer widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "timer widget.entitlements"; sourceTree = "<group>"; };
 		BCCAB4602C51337000B33A47 /* widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgetExtension.entitlements; sourceTree = "<group>"; };
+		BCD764F72C73475F00FB1B0D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDetailView.swift; sourceTree = "<group>"; };
 		BCEB51362C16FAF9007D2931 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
-		BCEFCB942C37429700E3618A /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
+		BCEFCB942C37429700E3618A /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */,
-				BCD41DE42C6E04580064F5E6 /* MCEmojiPicker in Frameworks */,
+				BCDC15922C772F02001BD438 /* MCEmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +104,10 @@
 		BC4B27E12C25F8B200D2BDD9 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				BC9AA2192C10AE4E0041A0E6 /* ButtonConfigurations.swift */,
-				BCEFCB942C37429700E3618A /* Editor.swift */,
+				BC9AA2192C10AE4E0041A0E6 /* Buttons.swift */,
+				BCEFCB942C37429700E3618A /* EditorView.swift */,
+				BCD764F72C73475F00FB1B0D /* SettingsView.swift */,
+				BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -110,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BCEB51362C16FAF9007D2931 /* Countdown.swift */,
-				BC9AA21B2C10BB360041A0E6 /* ListItems.swift */,
+				BC9AA21B2C10BB360041A0E6 /* Extensions.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -199,7 +205,7 @@
 			);
 			name = "timer widget";
 			packageProductDependencies = (
-				BCD41DE32C6E04580064F5E6 /* MCEmojiPicker */,
+				BCDC15912C772F02001BD438 /* MCEmojiPicker */,
 			);
 			productName = "timer widget";
 			productReference = BC839C7C2C0F914A00AFADA4 /* timer widget.app */;
@@ -250,7 +256,7 @@
 			);
 			mainGroup = BC839C732C0F914A00AFADA4;
 			packageReferences = (
-				BCD41DE22C6E04580064F5E6 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */,
+				BCDC15902C772F02001BD438 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */,
 			);
 			productRefGroup = BC839C7D2C0F914A00AFADA4 /* Products */;
 			projectDirPath = "";
@@ -287,11 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEFCB952C37429800E3618A /* Editor.swift in Sources */,
+				BCEFCB952C37429800E3618A /* EditorView.swift in Sources */,
 				BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */,
 				BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */,
-				BC9AA21A2C10AE4E0041A0E6 /* ButtonConfigurations.swift in Sources */,
-				BC9AA21C2C10BB360041A0E6 /* ListItems.swift in Sources */,
+				BC9AA21A2C10AE4E0041A0E6 /* Buttons.swift in Sources */,
+				BCD764FA2C735F1500FB1B0D /* CountdownDetailView.swift in Sources */,
+				BCD764F82C73475F00FB1B0D /* SettingsView.swift in Sources */,
+				BC9AA21C2C10BB360041A0E6 /* Extensions.swift in Sources */,
 				BCEB51372C16FAF9007D2931 /* Countdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,6 +502,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +606,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BCD41DE22C6E04580064F5E6 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */ = {
+		BCDC15902C772F02001BD438 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/izyumkin/MCEmojiPicker";
 			requirement = {
@@ -607,9 +617,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BCD41DE32C6E04580064F5E6 /* MCEmojiPicker */ = {
+		BCDC15912C772F02001BD438 /* MCEmojiPicker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BCD41DE22C6E04580064F5E6 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */;
+			package = BCDC15902C772F02001BD438 /* XCRemoteSwiftPackageReference "MCEmojiPicker" */;
 			productName = MCEmojiPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
