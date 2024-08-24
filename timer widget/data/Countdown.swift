@@ -12,19 +12,15 @@ import SwiftUI
 @Model
 class Countdown: Identifiable {
     
-    var title: String
+    @Attribute (.unique) var title: String
     var emoji: String
     var id: String { title }
-    
-//    var endDate: Date
-//    var color: String
-    
-    init(title: String, emoji: String/*, endDate: Date, color: String*/) {
+    var endDate: Date
+
+    init(title: String, emoji: String, endDate: Date) {
         self.title = title
         self.emoji = emoji
-//        self.endDate = endDate
-//        self.color = color
-        
+        self.endDate = endDate
     }
 }
 
