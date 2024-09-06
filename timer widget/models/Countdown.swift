@@ -16,11 +16,13 @@ class Countdown: Identifiable {
     var emoji: String
     var id: String { title }
     var endDate: Date
+    var color: String
 
-    init(title: String, emoji: String, endDate: Date) {
+    init(title: String, emoji: String, endDate: Date, color: String) {
         self.title = title
         self.emoji = emoji
         self.endDate = endDate
+        self.color = color
     }
 }
 

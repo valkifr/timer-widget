@@ -11,7 +11,7 @@
 		BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC839C812C0F914A00AFADA4 /* ContentView.swift */; };
 		BC839C842C0F914B00AFADA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C832C0F914B00AFADA4 /* Assets.xcassets */; };
 		BC839C872C0F914B00AFADA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */; };
-		BC9AA21A2C10AE4E0041A0E6 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* Buttons.swift */; };
+		BC9AA21A2C10AE4E0041A0E6 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* Styles.swift */; };
 		BC9AA21C2C10BB360041A0E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* Extensions.swift */; };
 		BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA19CA32C2806200071E1D3 /* CoreData.framework */; };
 		BCCAB44B2C51325300B33A47 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC989A2A2C1ADF2F00EAEF49 /* WidgetKit.framework */; };
@@ -27,6 +27,11 @@
 		BCDC15922C772F02001BD438 /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BCDC15912C772F02001BD438 /* MCEmojiPicker */; };
 		BCEB51372C16FAF9007D2931 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB51362C16FAF9007D2931 /* Countdown.swift */; };
 		BCEFCB952C37429800E3618A /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFCB942C37429700E3618A /* EditorView.swift */; };
+		BCF1E0472C84C682009E1BB2 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1E0462C84C682009E1BB2 /* EmojiView.swift */; };
+		BCF1E04A2C84C91F009E1BB2 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1E0492C84C91F009E1BB2 /* AddButton.swift */; };
+		BCF1E04C2C8644F9009E1BB2 /* CountdownColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1E04B2C8644F9009E1BB2 /* CountdownColors.swift */; };
+		BCF1E04F2C86458F009E1BB2 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1E04E2C86458F009E1BB2 /* ColorPicker.swift */; };
+		BCF1E0512C874D49009E1BB2 /* CountdownIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1E0502C874D49009E1BB2 /* CountdownIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +66,7 @@
 		BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC989A2A2C1ADF2F00EAEF49 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		BC989A2C2C1ADF2F00EAEF49 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		BC9AA2192C10AE4E0041A0E6 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		BC9AA2192C10AE4E0041A0E6 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		BC9AA21B2C10BB360041A0E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BCA19CA32C2806200071E1D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BCCAB44A2C51325300B33A47 /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +82,11 @@
 		BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDetailView.swift; sourceTree = "<group>"; };
 		BCEB51362C16FAF9007D2931 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		BCEFCB942C37429700E3618A /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		BCF1E0462C84C682009E1BB2 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		BCF1E0492C84C91F009E1BB2 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		BCF1E04B2C8644F9009E1BB2 /* CountdownColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownColors.swift; sourceTree = "<group>"; };
+		BCF1E04E2C86458F009E1BB2 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		BCF1E0502C874D49009E1BB2 /* CountdownIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,21 +114,38 @@
 		BC4B27E12C25F8B200D2BDD9 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				BC9AA2192C10AE4E0041A0E6 /* Buttons.swift */,
-				BCEFCB942C37429700E3618A /* EditorView.swift */,
-				BCD764F72C73475F00FB1B0D /* SettingsView.swift */,
-				BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */,
+				BC61B40F2C8A183000900DEB /* settings */,
+				BCF1E0482C84C8DD009E1BB2 /* Buttons */,
+				BCF1E0442C84C5F8009E1BB2 /* DetailView */,
+				BCF1E04D2C864577009E1BB2 /* Editor */,
 			);
 			path = views;
 			sourceTree = "<group>";
 		};
-		BC4B27E42C260A0C00D2BDD9 /* data */ = {
+		BC4B27E42C260A0C00D2BDD9 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				BCEB51362C16FAF9007D2931 /* Countdown.swift */,
 				BC9AA21B2C10BB360041A0E6 /* Extensions.swift */,
+				BCF1E04B2C8644F9009E1BB2 /* CountdownColors.swift */,
 			);
-			path = data;
+			path = models;
+			sourceTree = "<group>";
+		};
+		BC61B40E2C8A180600900DEB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		BC61B40F2C8A183000900DEB /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				BCD764F72C73475F00FB1B0D /* SettingsView.swift */,
+			);
+			path = settings;
 			sourceTree = "<group>";
 		};
 		BC839C732C0F914A00AFADA4 = {
@@ -126,7 +153,6 @@
 			children = (
 				BCCAB4602C51337000B33A47 /* widgetExtension.entitlements */,
 				BC839C7E2C0F914A00AFADA4 /* timer widget */,
-				BC839C832C0F914B00AFADA4 /* Assets.xcassets */,
 				BCCAB44D2C51325300B33A47 /* widget */,
 				BC989A292C1ADF2F00EAEF49 /* Frameworks */,
 				BC839C7D2C0F914A00AFADA4 /* Products */,
@@ -145,11 +171,12 @@
 		BC839C7E2C0F914A00AFADA4 /* timer widget */ = {
 			isa = PBXGroup;
 			children = (
-				BCCAB45F2C5132CC00B33A47 /* timer widget.entitlements */,
 				BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */,
 				BC839C812C0F914A00AFADA4 /* ContentView.swift */,
+				BCCAB45F2C5132CC00B33A47 /* timer widget.entitlements */,
+				BC61B40E2C8A180600900DEB /* resources */,
 				BC4B27E12C25F8B200D2BDD9 /* views */,
-				BC4B27E42C260A0C00D2BDD9 /* data */,
+				BC4B27E42C260A0C00D2BDD9 /* models */,
 				BC839C852C0F914B00AFADA4 /* Preview Content */,
 			);
 			path = "timer widget";
@@ -173,6 +200,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BCC6F0092C8B8DB6002ED540 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				BCF1E04E2C86458F009E1BB2 /* ColorPicker.swift */,
+				BCF1E0502C874D49009E1BB2 /* CountdownIcon.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		BCCAB44D2C51325300B33A47 /* widget */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +220,41 @@
 				BCCAB4582C51325500B33A47 /* Info.plist */,
 			);
 			path = widget;
+			sourceTree = "<group>";
+		};
+		BCF1E0442C84C5F8009E1BB2 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				BCF1E0452C84C65F009E1BB2 /* components */,
+				BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		BCF1E0452C84C65F009E1BB2 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				BCF1E0462C84C682009E1BB2 /* EmojiView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		BCF1E0482C84C8DD009E1BB2 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BC9AA2192C10AE4E0041A0E6 /* Styles.swift */,
+				BCF1E0492C84C91F009E1BB2 /* AddButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		BCF1E04D2C864577009E1BB2 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				BCEFCB942C37429700E3618A /* EditorView.swift */,
+				BCC6F0092C8B8DB6002ED540 /* components */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,8 +366,13 @@
 			files = (
 				BCEFCB952C37429800E3618A /* EditorView.swift in Sources */,
 				BC839C822C0F914A00AFADA4 /* ContentView.swift in Sources */,
+				BCF1E0472C84C682009E1BB2 /* EmojiView.swift in Sources */,
+				BCF1E04A2C84C91F009E1BB2 /* AddButton.swift in Sources */,
+				BCF1E0512C874D49009E1BB2 /* CountdownIcon.swift in Sources */,
 				BC839C802C0F914A00AFADA4 /* timer_widgetApp.swift in Sources */,
-				BC9AA21A2C10AE4E0041A0E6 /* Buttons.swift in Sources */,
+				BCF1E04F2C86458F009E1BB2 /* ColorPicker.swift in Sources */,
+				BC9AA21A2C10AE4E0041A0E6 /* Styles.swift in Sources */,
+				BCF1E04C2C8644F9009E1BB2 /* CountdownColors.swift in Sources */,
 				BCD764FA2C735F1500FB1B0D /* CountdownDetailView.swift in Sources */,
 				BCD764F82C73475F00FB1B0D /* SettingsView.swift in Sources */,
 				BC9AA21C2C10BB360041A0E6 /* Extensions.swift in Sources */,
@@ -457,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timer widget/Preview Content\"";
-				DEVELOPMENT_TEAM = HZPU6FY7QF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -493,7 +569,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timer widget/Preview Content\"";
-				DEVELOPMENT_TEAM = HZPU6FY7QF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
