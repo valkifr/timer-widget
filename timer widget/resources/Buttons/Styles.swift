@@ -23,7 +23,7 @@ struct AddCountdownButton: ButtonStyle {
 struct GrayTextFieldStyle: TextFieldStyle {
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
-            .padding(18)
+            .padding(15)
             .background(Color(uiColor: .systemGray6))
             .cornerRadius(8)
     }

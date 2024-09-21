@@ -13,7 +13,7 @@ import SwiftUI
 import SwiftData
 
 
-struct ContentView: View {
+struct ListView: View {
     @State private var isShowingNewCountdown = false
     @State private var isShowingSettings = false
     @State private var isDetailsViewShowing = false
@@ -25,13 +25,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-               
                     ForEach(countdowns) { countdown in
                         NavigationLink {
-                            CountdownDetailView(title: countdown.title,
-                                                emoji: countdown.emoji,
-                                                color: CountdownColor(rawValue: countdown.color)!.color,
-                                                date: Date().description)
+                            CountdownDetailView(countdown: countdown)
                             .onAppear {
                                 withAnimation {
                                     isDetailsViewShowing = true
@@ -85,7 +81,10 @@ func remainingDays(to futureDate: Date) -> String {
     formatter.dateFormat = "d" // Display only days (e.g., "10d")
     let currentDate = Date()
     let timeInterval = futureDate.timeIntervalSince(currentDate)
-    return formatter.string(from: Date(timeIntervalSince1970: timeInterval.rounded(.down)))
+    var daysLeftInString = formatter.string(from: Date(timeIntervalSince1970: timeInterval.rounded(.down)))
+    let daysLeftInInt = (Int(daysLeftInString) ?? 1000) - 1
+    daysLeftInString = String(daysLeftInInt)
+    return daysLeftInString
 }
 
 #Preview {
@@ -93,12 +92,12 @@ func remainingDays(to futureDate: Date) -> String {
     let config = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(for: Countdown.self, configurations: config)
     
-    for i in 1..<10 {
-        let countdown = Countdown(title: "Example \(i)", emoji: "🗓️", endDate: Date().addingTimeInterval(3600 * 24 * 30), color: CountdownColor.red.rawValue)
+    for i in 1...5 {
+        let countdown = Countdown(title: "Example \(i)", emoji: "🗓️", endDate: Date().addingTimeInterval(3600 * 24 * 30), alertDate: .distantFuture, color: CountdownColor.red.rawValue)
         container.mainContext.insert(countdown)
     }
     
-    return ContentView()
+    return ListView()
         .modelContainer(container)
 }
 
@@ -108,6 +107,6 @@ func remainingDays(to futureDate: Date) -> String {
     let container = try! ModelContainer(for: Countdown.self, configurations: config)
     
     
-    return ContentView()
+    return ListView()
         .modelContainer(container)
 }

@@ -14,8 +14,8 @@ struct SettingsView: View {
     
     @State private var isAlertShowing = false
     
-    @Environment (\.dismiss) private var dismiss
-    @Environment (\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var modelContext
     
     var body: some View {
         NavigationStack {
