@@ -42,7 +42,6 @@
 /* Begin PBXFileReference section */
 		BC1BBA252C8CCBC9004618BE /* CountdownListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownListItem.swift; sourceTree = "<group>"; };
 		BC2F92832C98C1E400E29FA3 /* timer widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "timer widget.entitlements"; sourceTree = "<group>"; };
-		BC5502832CA0406500B8FA5F /* widget.timerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widget.timerExtension.entitlements; sourceTree = "<group>"; };
 		BC839C7C2C0F914A00AFADA4 /* timer widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "timer widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC839C7F2C0F914A00AFADA4 /* timer_widgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer_widgetApp.swift; sourceTree = "<group>"; };
 		BC839C812C0F914A00AFADA4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -125,7 +124,6 @@
 		BC839C732C0F914A00AFADA4 = {
 			isa = PBXGroup;
 			children = (
-				BC5502832CA0406500B8FA5F /* widget.timerExtension.entitlements */,
 				BC839C7E2C0F914A00AFADA4 /* timer widget */,
 				BC989A292C1ADF2F00EAEF49 /* Frameworks */,
 				BC839C7D2C0F914A00AFADA4 /* Products */,
