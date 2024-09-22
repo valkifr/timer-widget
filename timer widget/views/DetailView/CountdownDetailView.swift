@@ -39,7 +39,7 @@ struct CountdownDetailView: View {
                     Image(systemName: "pencil")
                 }
                 .sheet(isPresented: $isPresented) {
-                    NewCountdownView(countdown: countdown)
+                    NewCountdownView(countdown: countdown, editorTitle: "Edit Countdown")
                 }
             }
         }

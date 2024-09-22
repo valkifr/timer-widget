@@ -19,9 +19,7 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationStack {
-            
             Form {
-                
                 Button("Delete All Data") {
                     isAlertShowing = true
                 }
@@ -31,6 +29,9 @@ struct SettingsView: View {
                             try modelContext.delete(model: Countdown.self)
                         } catch {
                             print(error.localizedDescription)
+                        }
+                        for countdown in countdowns {
+                            cancelNotification(identifier: countdown.id)
                         }
                         dismiss()
                     }

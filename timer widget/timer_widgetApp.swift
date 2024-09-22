@@ -10,7 +10,7 @@ import SwiftData
 
 @main
 struct timer_widgetApp: App {
-   
+    
    var container: ModelContainer {
       let schema = Schema([Countdown.self])
       let config = ModelConfiguration(schema: schema, allowsSave: true)

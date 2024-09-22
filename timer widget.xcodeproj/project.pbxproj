@@ -14,7 +14,6 @@
 		BC839C872C0F914B00AFADA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC839C862C0F914B00AFADA4 /* Preview Assets.xcassets */; };
 		BC9AA21A2C10AE4E0041A0E6 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA2192C10AE4E0041A0E6 /* Styles.swift */; };
 		BC9AA21C2C10BB360041A0E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9AA21B2C10BB360041A0E6 /* Extensions.swift */; };
-		BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA19CA32C2806200071E1D3 /* CoreData.framework */; };
 		BCD764F82C73475F00FB1B0D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD764F72C73475F00FB1B0D /* SettingsView.swift */; };
 		BCD764FA2C735F1500FB1B0D /* CountdownDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */; };
 		BCDC15922C772F02001BD438 /* MCEmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = BCDC15912C772F02001BD438 /* MCEmojiPicker */; };
@@ -52,7 +51,6 @@
 		BC989A2C2C1ADF2F00EAEF49 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		BC9AA2192C10AE4E0041A0E6 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		BC9AA21B2C10BB360041A0E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		BCA19CA32C2806200071E1D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BCD764F72C73475F00FB1B0D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BCD764F92C735F1500FB1B0D /* CountdownDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDetailView.swift; sourceTree = "<group>"; };
 		BCEB51362C16FAF9007D2931 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCA19CA42C2806200071E1D3 /* CoreData.framework in Frameworks */,
 				BCDC15922C772F02001BD438 /* MCEmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +162,6 @@
 		BC989A292C1ADF2F00EAEF49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BCA19CA32C2806200071E1D3 /* CoreData.framework */,
 				BC989A2A2C1ADF2F00EAEF49 /* WidgetKit.framework */,
 				BC989A2C2C1ADF2F00EAEF49 /* SwiftUI.framework */,
 			);
@@ -231,7 +227,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					BC839C7B2C0F914A00AFADA4 = {
@@ -427,7 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timer widget/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HZPU6FY7QF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -462,7 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"timer widget/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HZPU6FY7QF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
