@@ -5,10 +5,7 @@
 //  Created by Olivér Ungváry on 04/06/2024.
 //
 
-import SwiftUI
-import SwiftData
-
-
+import UserNotifications
 import SwiftUI
 import SwiftData
 
@@ -44,6 +41,7 @@ struct ListView: View {
                         .swipeActions(edge: .trailing) {
                             Button(role: .destructive) {
                                 modelContext.delete(countdown)
+                                cancelNotification(identifier: countdown.id)
                             } label: {
                                 Label("Delete", systemImage: "trash")
                             }
@@ -85,6 +83,11 @@ func remainingDays(to futureDate: Date) -> String {
     let daysLeftInInt = (Int(daysLeftInString) ?? 1000) - 1
     daysLeftInString = String(daysLeftInInt)
     return daysLeftInString
+}
+
+func cancelNotification(identifier: String) {
+    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [identifier])
+    print("Notification with ID \(identifier) cancelled.")
 }
 
 #Preview {

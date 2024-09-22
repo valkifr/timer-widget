@@ -4,6 +4,7 @@
 //
 //  Created by Olivér Ungváry on 04/07/2024.
 //
+import UserNotifications
 import MCEmojiPicker
 import SwiftUI
 import SwiftData
@@ -12,9 +13,7 @@ struct NewCountdownView: View {
     
     var countdown: Countdown? = nil
     
-    private var editorTitle: String {
-        title == "" ? "New Countdown" : title
-    }
+    var editorTitle: String
     
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
@@ -58,11 +57,12 @@ struct NewCountdownView: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
                         save()
+
                         dismiss()
                     }
                 }
                 ToolbarItem(placement: .principal) {
-                    Text(title == "" ? "New Countdown" : title)
+                    Text(editorTitle)
                         .font(.headline)
                 }
                 ToolbarItem(placement: .cancellationAction) {
@@ -81,16 +81,39 @@ struct NewCountdownView: View {
             countdown.endDate = date
             countdown.color = color.rawValue
             countdown.alertDate = alertDate
+            
+            scheduleNotification(for: countdown)
         } else {
             let newCountdown = Countdown(title: title, emoji: emoji, endDate: date, alertDate: alertDate, color: color.rawValue)
+            scheduleNotification(for: newCountdown)
             modelContext.insert(newCountdown)
         }
     }
+    func scheduleNotification(for notificationCountdown: Countdown) {
+        let content = UNMutableNotificationContent()
+        content.title = "\(emoji)\(title)"
+        content.body = "its time"
+        content.sound = .default
+        
+        let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: notificationCountdown.alertDate)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error scheduling notification: \(error.localizedDescription)")
+            } else {
+                print("Notification scheduled successfully for \(notificationCountdown.title)!")
+            }
+        }
+    }
+    
 }
 
 
 
 #Preview {
-    NewCountdownView()
+    NewCountdownView(editorTitle: "hawk tuah")
 }
 

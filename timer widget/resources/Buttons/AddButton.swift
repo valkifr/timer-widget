@@ -19,12 +19,23 @@ struct AddButton: View {
             Spacer()
             Button(buttonTitle, systemImage: "plus.circle") {
                 toggle = true
+                requestNotificationPermission()
             }
             .buttonStyle(AddCountdownButton())
             .sheet(isPresented: $toggle) {
-                NewCountdownView()
+                NewCountdownView(editorTitle: "Add New Countdown")
             }
             .padding()
+        }
+    }
+}
+
+func requestNotificationPermission() {
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+        if granted {
+            print("Permission granted!")
+        } else if let error = error {
+            print("Error requesting notifications permission: \(error.localizedDescription)")
         }
     }
 }
